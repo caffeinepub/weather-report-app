@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Root application component that sets up ThemeProvider, QueryClientProvider, and renders the WeatherApp with toast notifications.",
+  "frontend/src/pages/WeatherApp.tsx": "Main weather application page that handles location detection, city search, and displays current weather and 5-day forecast with a hero banner.",
+  "frontend/src/components/WeatherCard.tsx": "Component that displays current weather information including temperature, humidity, wind speed, visibility, and pressure with weather icons.",
+  "frontend/src/components/ForecastCard.tsx": "Component that displays a single day's weather forecast with date, weather icon, condition, and temperature range.",
+  "frontend/src/components/Header.tsx": "Application header with cloud icon and Weather Report branding.",
+  "frontend/src/components/Footer.tsx": "Application footer with copyright notice and caffeine.ai attribution link.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hook that fetches weather data from Open-Meteo API and transforms it into current weather and 5-day forecast data.",
+  "frontend/src/lib/weatherUtils.ts": "Utility function that maps weather codes to appropriate weather icon assets.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring sky-blue themed colors for light mode and deep blue night sky theme for dark mode."
+}
