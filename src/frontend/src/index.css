@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* NovaPay light mode - clean fintech blue */
+    --background: 0.965 0.012 220;
+    --foreground: 0.13 0.02 240;
+    --card: 1 0 0;
+    --card-foreground: 0.13 0.02 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0.02 240;
+    --primary: 0.52 0.19 255;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.02 220;
+    --secondary-foreground: 0.3 0.03 230;
+    --muted: 0.94 0.015 220;
+    --muted-foreground: 0.45 0.025 240;
+    --accent: 0.92 0.03 220;
+    --accent-foreground: 0.2 0.03 240;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.9 0.018 220;
+    --input: 0.9 0.018 220;
+    --ring: 0.52 0.19 255;
+    --success: 0.52 0.14 145;
+    --success-foreground: 1 0 0;
+    --chart-1: 0.52 0.19 255;
+    --chart-2: 0.52 0.14 145;
+    --chart-3: 0.65 0.15 60;
+    --chart-4: 0.65 0.18 30;
+    --chart-5: 0.65 0.15 300;
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.13 0.02 240;
+    --sidebar-primary: 0.52 0.19 255;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.92 0.03 220;
+    --sidebar-accent-foreground: 0.2 0.03 240;
+    --sidebar-border: 0.9 0.018 220;
+    --sidebar-ring: 0.52 0.19 255;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

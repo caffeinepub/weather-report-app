@@ -1,41 +1,27 @@
-# Weather Report App
+# GPay App
 
-## Overview
-A weather application that allows users to search for weather information by city name and automatically detect their current location weather.
+## Current State
+The project currently has a Weather Report App with weather display functionality. This will be replaced with a digital payments app.
 
-## Core Features
+## Requested Changes (Diff)
 
-### Search Functionality
-- Search bar for entering city names
-- Real-time weather data retrieval for searched cities
+### Add
+- User wallet with balance display
+- Send money to contacts feature
+- Receive money with QR code
+- Request money from contacts
+- Bills/payments feature
+- Transaction history list
+- Quick pay contacts
+- Account management
 
-### Weather Display
-- Current weather information including:
-  - Temperature
-  - Humidity
-  - Wind speed
-  - Sky condition
-- 5-day weather forecast with daily weather icons
-- Weather-themed UI with appropriate colors and icons
+### Modify
+- Replace all existing UI and backend logic with GPay-style payment app
 
-### Location Services
-- Automatic detection of user's current location (with browser permission)
-- Display weather for detected location
+### Remove
+- All weather-related functionality
 
-### User Interface
-- Clean, modern design
-- Weather-themed visual elements
-- Responsive layout
-- English language interface
-
-## Technical Requirements
-
-### Frontend
-- Handle geolocation API for automatic location detection
-- Make HTTP calls to weather API services
-- Display weather icons and forecast data
-- Manage search input and results display
-
-### Backend
-- No persistent data storage required
-- All weather data fetched from external APIs in real-time
+## Implementation Plan
+1. Backend: wallet balance, transactions (send/receive/request), contacts, bills storage in Motoko
+2. Frontend: Dashboard with balance card, shortcut tiles (Send, Receive, Request, Bills), recent transactions, quick pay contacts, bottom nav on mobile
+3. Authorization for user login
